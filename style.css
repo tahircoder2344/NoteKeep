@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins' ;
+}
+
+h1{
+text-align: center;
+background-color: #9366e3;
+height: 65px;
+}
+
+p{
+    text-align: center;
+    background-color:#c5575b;
+    font-size: large;
+    line-height: 3rem;
+}
+p::selection{
+    background-color: red;
+    color: white;
+    /* Replace with your desired color */
+  }
+  h1::selection{
+    color: white;
+    background-color: red; /* Replace with your desired color */
+  }
+  
+  #main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #c5575b;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.note{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 70px;
+
+}
+.tool{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+.tool .save:hover{
+    color: green;
+}
+.tool .trash:hover{
+    color: red;
+}
+.note textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+}
+.note textarea:focus{
+    border: none;
+    outline: none;
+}
+#add-btn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #9366e3;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    transition: 0.5s ease;
+}
+#add-btn:hover{
+    background-color: #62e2bb;
+    color: green;
+    font-size: 18px;
+    padding: 10px;
+    position: fixed;
+    top:15px ;
+    right: 15px;
+}
+@media screen and (max-width: 768px) {
+    #main {
+      justify-content: center; /* Center content */
+    }
+    
+    .note {
+      width: 90%; /* Adjust width to fit smaller screens */
+      margin: 15px auto; 
+      margin-top: 8px;
+    }
+  
+    #add-btn {
+      position: fixed; /* Remove fixed positioning */
+      display: block;
+      margin: 15px auto; /* Center the button */
+    }
+  }
