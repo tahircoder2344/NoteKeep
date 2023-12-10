@@ -118,3 +118,36 @@ p::selection{
       margin: 15px auto; /* Center the button */
     }
   }
+footer {
+    background-color: #9366e3;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  b{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  table {
+    margin: 0 auto;
+  }
+  
+  th {
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  
+  td {
+    padding-left: 10px;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: #e0e0e0;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
